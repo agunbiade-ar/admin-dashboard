@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Nunito&family=Satisfy&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+h4 {
+  font-size: 0.95rem;
+}
+
+a {
+  text-decoration: none;
+  color: #391d0c;
+}
+
+.sidebar {
+  background-color: antiquewhite;
+  font-family: 'Mooli', sans-serif;
+}
+
+.sidebar div {
+  padding: 5px;
+  margin: 15px 15px;
+}
+
+.tailor-dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-section {
+  background-color: #69350f;
+}
+
+header {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+.search-area {
+  grid-column: 1 / -1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 10px;
+}
+
+nav a {
+  background-color: #863e15;
+  color: antiquewhite;
+  padding: 7px;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  background-color: antiquewhite;
+  color: #863e15;
+}
+
+img {
+  border-radius: 50%;
+}
+
+input {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+input[type='search']::placeholder {
+  text-align: center;
+}
+
+input[type='search']:focus {
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+article > h3 {
+  grid-column: 1 / -1;
+  background-color: #863e15;
+  color: antiquewhite;
+  padding: 5px;
+}
+
+article .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 5px;
+}
+
+article .card {
+  margin: 10px;
+  background-color: antiquewhite;
+  border-radius: 0 10px 0 10px;
+  color: black;
+  text-align: center;
+}
+
+.card p {
+  font-weight: normal;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.card .title {
+  background-color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.announcements,
+.trending {
+  height: 50%;
+  padding: 5px;
+  text-align: center;
+}
+
+.announcements h3,
+.trending h3 {
+  color: white;
+  background-color: #863e15;
+}
+
+.announcements div,
+.trending div {
+  font-size: 0.9rem;
+  background-color: antiquewhite;
+  padding: 5px;
+  border-bottom: 1px dashed #69350f;
+}
+
+.trending div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.trending div a,
+article > h3 {
+  font-family: 'Satisfy', cursive;
+}
